@@ -8,7 +8,6 @@
 }
 body {
   font-family: tahomaRegular;
-
 }
 header {
   font-family: tahomaBold;
@@ -16,6 +15,11 @@ header {
   margin: 0 auto;
   max-width: 1024px;
   width: 100%;
+}
+input {
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #d7d7d7;
 }
 .header__list {
   background-color: #54add8;
@@ -102,6 +106,9 @@ header {
   align-items: center;
   position: relative;
 }
+.form__box {
+
+}
 .form__box:first-child {
   margin-left: 40px;
 }
@@ -114,13 +121,13 @@ header {
  outline: none;
  cursor: pointer;
 }
-.form__description,.label-departure,.label-arrival {
+.form__description,.label-departure,
+.label-arrival,.label-date {
   display: block;
   text-align: left;
   margin: 10px 10px 10px 0;
 }
 .form__input {
-  border-radius: 4px;
   width: 397px;
   height: 42px;
   padding-left: 15px;
@@ -150,5 +157,22 @@ header {
   color: #fff;
   border-bottom: none;
 }
+.form__input-date {
+  padding: 10px;
+  background: url(../img/calendar.png) no-repeat 145px  #fff;
+}
+.form__input-date--blue {
+  background-color: #1395d3;
+  border: 1px solid #0076ad;
+  background-image: url(../img/calendar2.png);
+  color: #94c4db;
 
+}
+.form__input-roundtrip:checked + .form__box-roundtrip {
+  visibility: visible;
+}
+.form__box-roundtrip {
+  visibility: hidden;
+  background: url(../img/Rectangle.png) no-repeat;
+}
 /*.roundtrip color #0b92d2*/
