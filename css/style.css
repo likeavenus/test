@@ -28,8 +28,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin-left: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 .header__list-item {
   list-style: none;
@@ -46,16 +45,26 @@ header {
   text-transform: none;
   text-decoration: underline;
 }
-#sign-in:before {
-  content: '';
+/* здесь будут спрайты*/
+.icon {
+  background: url(../img/css_sprites.png) no-repeat;
   display: inline-block;
-  width: 12px;
-  height: 15px;
-  background-image: url(../img/dude.png);
-  position: relative;
-  margin-right: 5px;
   vertical-align: middle;
 }
+.dude {
+  background-position: -48px -56px;
+  width: 12px;
+  height: 15px;
+  margin-right: 10px;
+}
+.arrow {
+  background-position: -106px -10px;
+  width: 10px;
+  height: 5px;
+  margin-left: 10px;
+}
+/* здесь конец спрайтов*/
+
 .main__container {
   max-width: 1024px;
   width: 100%;
@@ -78,6 +87,24 @@ header {
   display: -o-flex;
   display: flex;
   justify-content: space-around;
+  position: relative;
+}
+.form__box:first-child {
+  margin-left: 40px;
+}
+.form__box:nth-child(2) {
+  margin-right: 40px;
+}
+.form__box:first-child:after {
+  content: '';
+  display: inline-block;
+  background: url(../img/css_sprites.png) -56px -10px;
+  width: 30px;
+  height: 16px;
+  position: absolute;
+  left: 500px;
+  bottom: 54px;
+
 }
 .form__description {
   display: block;
@@ -86,7 +113,8 @@ header {
 }
 #departure,#arrival {
   border-radius: 4px;
-  height: 48px;
+  width: 397px;
+  height: 42px;
 }
 
 /*.roundtrip color #0b92d2*/
