@@ -27,7 +27,7 @@ header {
   -ms-align-items: center;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 15px;
   margin: 0;
 }
 .header__list-item {
@@ -52,16 +52,27 @@ header {
   vertical-align: middle;
 }
 .dude {
-  background-position: -48px -56px;
+  background-position: -106px -48px;
   width: 12px;
   height: 15px;
   margin-right: 10px;
 }
 .arrow {
-  background-position: -106px -10px;
+  background-position: -60px -56px;
   width: 10px;
   height: 5px;
   margin-left: 10px;
+}
+.reverse {
+  background-position: -56px -10px;
+  width: 30px;
+  height: 16px;
+/*  -webkit-transition: background-position .5s ease;
+  -o-transition: background-position .5s ease;
+  transition: background-position .5s ease;*/
+}
+.reverse:hover {
+  background-position: -10px -56px;;
 }
 /* здесь конец спрайтов*/
 
@@ -87,28 +98,32 @@ header {
   display: -o-flex;
   display: flex;
   justify-content: space-around;
+  -ms-align-items: center;
+  align-items: center;
   position: relative;
 }
 .form__box:first-child {
   margin-left: 40px;
 }
-.form__box:nth-child(2) {
+.form__box:nth-child(3) {
   margin-right: 40px;
 }
-.form__box:first-child:after {
-  content: '';
-  display: inline-block;
-  background: url(../img/css_sprites.png) -56px -10px;
-  width: 30px;
-  height: 16px;
-  position: absolute;
-  left: 500px;
-  bottom: 54px;
+.form__box-btn {
+ background: none;
+ border: none;
+ outline: none;
+ cursor: pointer;
 }
-.form__description,.form__departure,.form__arrival {
+.form__description,.label-departure,.label-arrival {
   display: block;
   text-align: left;
   margin: 10px 10px 10px 0;
+}
+.form__input {
+  border-radius: 4px;
+  width: 397px;
+  height: 42px;
+  padding-left: 15px;
 }
 .form__departure,.form__arrival {
   color: #80b8d7;
@@ -134,11 +149,6 @@ header {
 .form__departure--dashed:hover {
   color: #fff;
   border-bottom: none;
-}
-#departure,#arrival {
-  border-radius: 4px;
-  width: 397px;
-  height: 42px;
 }
 
 /*.roundtrip color #0b92d2*/
