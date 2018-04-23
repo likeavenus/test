@@ -44,6 +44,17 @@ header {
 }
 #sign-in {
   text-transform: none;
+  text-decoration: underline;
+}
+#sign-in:before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 15px;
+  background-image: url(../img/dude.png);
+  position: relative;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 .main__container {
   max-width: 1024px;
@@ -77,3 +88,5 @@ header {
   border-radius: 4px;
   height: 48px;
 }
+
+/*.roundtrip color #0b92d2*/
