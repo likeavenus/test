@@ -71,8 +71,9 @@ header {
 .form__description {
   display: block;
   text-align: left;
+  margin: 10px 10px 10px 0;
 }
-#form__input,#form__input2 {
+#departure,#arrival {
   border-radius: 4px;
   height: 48px;
 }
