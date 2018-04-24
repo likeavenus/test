@@ -149,6 +149,7 @@ input {
 .form__title {
   margin-top: 0;
   font-size: 24px;
+  font-weight: normal;
 }
 .form__container {
   display: -webkit-flex;
@@ -221,17 +222,67 @@ input {
   border: 1px solid #0076ad;
   background-image: url(../img/calendar2.png);
   color: #94c4db;
-
 }
-.form__input-roundtrip:checked + .form__box-roundtrip {
+
+.form__input-roundtrip:checked ~ .form__box-return {
   visibility: visible;
 }
 .form__box-roundtrip {
-  visibility: hidden;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
   background: url(../img/rect.png) no-repeat;
 }
-/*стилизую checkbox*/
-
+.form__box-roundtrip:before {
+  content: "";
+  display: flex;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.form__box--hidden {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+.form__box-return {
+  visibility: hidden;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.form__input-roundtrip:checked + .form__box-roundtrip:before {
+  content: "";
+  background: url(../img/check.png) no-repeat #fff 50% 50%;
+  color: #0788c7;
+}
 .form__input-currency {
   width: 87px;
   height: 47px;
@@ -239,13 +290,10 @@ input {
 .form__box-search {
   color: #fff;
   background: linear-gradient(to top, #f76407, #fbae4a);
-/*  margin-right: 25px;*/
   padding: 15px 47px;
   border-radius: 5px;
   border-color: #de5300;
-}
-#trip {
-
+  margin-top: 25px;
 }
 .form__box-select {
   text-transform: uppercase;
@@ -253,6 +301,7 @@ input {
   font-size: 16px;
   padding: 15px;
   border-radius: 5px;
+  margin-top: 25px;
 }
 .form__box-option:hover {
   background-color: #bfd8eb;

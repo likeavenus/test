@@ -87,16 +87,17 @@
           <input type="date" id="departure-date" class="form__input-date">
         </div>
 
-        <div class="form__box" id="trip">
-          <input type="checkbox" id="roundtrip" class="form__input-roundtrip">Roundtrip
-          <label for="roundtrip" class="form__box-roundtrip">
+        <div class="form__box form__box--hidden" id="trip">
+          <input type="checkbox" id="roundtrip" class="form__input-roundtrip visually-hidden">
+          <label for="roundtrip" class="form__box-roundtrip">Roundtrip</label>
+            <div class="form__box-return">
               <label for="departure-date-blue" class="label-date">Return date:</label>
               <input type="date" id="departure-date-blue" class="form__input-date form__input-date--blue">
-          </label>
+            </div>
         </div>
 
         <div class="form__box">
-          <select name="" id="" class="form__box-select">
+          <select name="select" id="" class="form__box-select">
             <option value="" class="form__box-option">usd</option>
             <option selected="" value="" class="form__box-option">rub</option>
             <option value="" class="form__box-option">gbr</option>
