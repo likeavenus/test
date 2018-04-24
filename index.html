@@ -14,7 +14,7 @@
         <li class="header__list-item"><a href="#" class="header__link">sapsan</a></li>
         <li class="header__list-item"><a href="#" class="header__link">allegro</a></li>
         <li class="header__list-item">
-          <a href="#" class="header__link">trans-siberian<i class="icon arrow"></i></a>
+          <a href="#" class="header__link" id="trans-sib">trans-siberian<i class="icon arrow"></i></a>
           <ul class="sub-menu">
               <li class="sub-menu__item"><a class="sub-menu__link" href="#">Lorem ipsum.</a></li>
               <li class="sub-menu__item"><a class="sub-menu__link" href="#">Lorem ipsum.</a></li>
@@ -86,16 +86,24 @@
           <label for="departure-date" class="label-date">Departure date:</label>
           <input type="date" id="departure-date" class="form__input-date">
         </div>
-        <div class="form__box">
+
+        <div class="form__box" id="trip">
           <input type="checkbox" id="roundtrip" class="form__input-roundtrip">
           <label for="roundtrip" class="form__box-roundtrip">Roundtrip
-              <label for="departure-date-blue" class="label-date">Return date:</label>
-              <input type="date" id="departure-date-blue" class="form__input-date form__input-date--blue">
+              <label for="departure-date-blue" class="label-date">Return date:
+                <input type="date" id="departure-date-blue" class="form__input-date form__input-date--blue">
+              </label>
           </label>
         </div>
+
         <div class="form__box">
-          <label for="currency" class="label-date">Currency</label>
-          <input type="text" id="currency" class="form__input-currency">
+          <select name="" id="" class="form__box-select">
+            <option value="" class="form__box-option">usd</option>
+            <option selected="" value="" class="form__box-option">rub</option>
+            <option value="" class="form__box-option">gbr</option>
+            <option value="" class="form__box-option">eur</option>
+            <option value="" class="form__box-option">chf</option>
+          </select>
         </div>
         <div class="form__box">
           <button class="form__box-search"><i class="icon search"></i>Search</button>
@@ -106,5 +114,8 @@
 
 
 </main>
+<footer></footer>
+<script src="js/script.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 </body>
 </html>

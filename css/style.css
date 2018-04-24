@@ -225,8 +225,10 @@ input {
 }
 .form__box-roundtrip {
   visibility: hidden;
-  background: url(../img/Rectangle.png) no-repeat;
+  background: url(../img/rect.png) no-repeat;
 }
+/*стилизую checkbox*/
+
 .form__input-currency {
   width: 87px;
   height: 47px;
@@ -239,4 +241,13 @@ input {
   border-radius: 5px;
   border-color: #de5300;
 }
-/*.roundtrip color #0b92d2*/
+#trip {
+
+}
+.form__box-select {
+  text-transform: uppercase;
+  font-family: tahomaRegular;
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 5px;
+}
