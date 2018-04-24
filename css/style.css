@@ -31,8 +31,12 @@ input {
   -ms-align-items: center;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 20px;
   margin: 0;
+}
+.header__list:after {
+  display: block;
+  clear: both;
 }
 .header__list-item {
   list-style: none;
@@ -44,6 +48,51 @@ input {
   text-transform: uppercase;
   font-size: 13px;
   margin: 11px;
+  -webkit-transition: all linear 0.15s;
+  -o-transition: all linear 0.15s;
+  transition: all linear 0.15s;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu > ul > li {
+  float: left;
+  display: inline-block;
+  position: relative;
+}
+.menu > ul > li > a {
+  display: inline-block;
+}
+.sub-menu {
+  width: 100%;
+  padding: 5px 0;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity linear 0.15s;
+  -o-transition: opacity linear 0.15s;
+  transition: opacity linear 0.15s;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.menu li:active .sub-menu {
+  z-index: 1;
+  opacity: 1;
+}
+.sub-menu a {
+  color: #000;
+}
+.sub-menu li {
+  font-family: tahomaRegular;
+  margin: 10px;
+}
+.sub-menu li:hover {
+  background-color: #bfd8eb;
 }
 #sign-in {
   text-transform: none;
@@ -107,7 +156,6 @@ input {
   justify-content: space-between;
   -ms-align-items: center;
   align-items: center;
-  position: relative;
 }
 .form__container:last-child {
   padding-bottom: 45px;
