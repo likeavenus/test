@@ -96,6 +96,14 @@ input {
 #sign-in {
   text-transform: none;
   text-decoration: underline;
+  background-color: transparent;
+  color: #fff;
+  padding: 0;
+  margin: 19px 10px;
+  opacity: 0.6;
+}
+#sign-in:hover {
+  opacity: 1;
 }
 /* здесь будут спрайты*/
 .icon {
@@ -104,27 +112,27 @@ input {
   vertical-align: middle;
 }
 .dude {
-  background-position: -106px -48px;
+  background-position: -60px -56px;
   width: 12px;
   height: 15px;
   margin-right: 10px;
 }
 .arrow {
-  background-position: -60px -56px;
+  background-position: -10px -92px;
   width: 10px;
   height: 5px;
   margin-left: 10px;
 }
 .reverse {
-  background-position: -56px -10px;
+  background-position: -102px -10px;
   width: 30px;
   height: 16px;
 }
 .reverse:hover {
-  background-position: -10px -56px;;
+  background-position: -10px -56px;
 }
 .search {
-  background-position: -106px -10px;;
+  background-position: -102px -46px;
   width: 18px;
   height: 18px;
   margin-right: 15px;
