@@ -1,20 +1,13 @@
-@font-face {
-  font-family: tahomaBold;
-  src: url(../fonts/tahomaBold.ttf) format('truetype');
-}
-@font-face {
-  font-family: tahomaRegular;
-  src: url(../fonts/tahomaRegular.ttf) format('truetype');
-}
 body {
-  font-family: tahomaRegular;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 header {
-  font-family: tahomaBold;
+  font-family: inherit;
   display: block;
   margin: 0 auto;
   max-width: 1024px;
   width: 100%;
+  font-weight: 550;
 }
 input {
   outline: none;
@@ -47,14 +40,13 @@ input {
   color: #fff;
   text-transform: uppercase;
   font-size: 13px;
-  padding: 19px 10px;
+  padding: 20px 10px;
 }
 .header__link:hover {
   background-color: #f75c00;
 }
 .sub-menu__item {
   list-style: none;
-  font-family: tahomaRegular;
   width: 100%;
   line-height: 2;
 }
@@ -62,7 +54,6 @@ input {
   background-color: #bfd8eb;
 }
 .menu > ul > li {
-  float: left;
   display: inline-block;
   position: relative;
 }
@@ -81,6 +72,7 @@ input {
   transition: opacity linear 0.15s;
   background-color: #fff;
   border-radius: 2px;
+  font-weight: normal;
 }
 .sub-menu__link  {
   padding: 10px;
@@ -195,7 +187,6 @@ input {
 .form__departure,.form__arrival {
   color: #80b8d7;
   cursor: pointer;
-  padding: 1px;
 }
 .form__arrival--dashed {
   border-bottom: 1px dashed #80b8d7;
@@ -254,8 +245,11 @@ input {
 }
 .form__box-select {
   text-transform: uppercase;
-  font-family: tahomaRegular;
+  font-family: inherit;
   font-size: 16px;
   padding: 15px;
   border-radius: 5px;
+}
+.form__box-option:hover {
+  background-color: #bfd8eb;
 }
