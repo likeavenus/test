@@ -363,6 +363,8 @@ input {
   align-items: center;
   background: url(../img/rect.png) no-repeat;
   cursor: pointer;
+  margin-top: 36px;
+  margin-right: 20px;
 }
 .form__box-roundtrip:before {
   content: "";
