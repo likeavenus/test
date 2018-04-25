@@ -451,11 +451,11 @@ select, option {
 .form__box-option:hover {
   background-color: #bfd8eb;
 }
+/* стилизация бургера */
 .adapt-burger {
     display: inline-block;
     cursor: pointer;
 }
-
 .adapt-burger__item1, .adapt-burger__item2, .adapt-burger__item3 {
     width: 35px;
     height: 5px;
@@ -475,3 +475,4 @@ select, option {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
+/* стилизация бургера-конец */
