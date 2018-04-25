@@ -91,6 +91,12 @@ input {
 .header__link:hover {
   background-color: #f75c00;
 }
+@media (max-width: 864px) {
+  .menu > ul > .header__sign-in{
+    display: none;
+  }
+}
+
 .sub-menu__item {
   list-style: none;
   width: 100%;
