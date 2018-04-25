@@ -8,8 +8,6 @@ header {
   max-width: 1024px;
   width: 100%;
   font-weight: 550;
-  font-weight: -moz-bolder;
-  font-weight: -ms-bolder;
 }
 input {
   outline: none;
@@ -34,6 +32,11 @@ input {
     display: none;
   }
 }
+@media (max-width: 864px) {
+.header__list--show {
+  display: flex;
+  }
+}
 .adapt-header {
   margin: 0;
   padding: 0;
@@ -52,11 +55,14 @@ input {
   display: -o-flex;
   display: flex;
   justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
   padding: 0;
   margin: 0;
 }
 .adapt-header__item {
   list-style: none;
+  margin: 10px 15px;
 }
 .header__list:after {
   display: block;
@@ -127,7 +133,7 @@ input {
   background-color: transparent;
   color: #fff;
   padding: 0;
-  margin: 19px 10px;
+  margin: 10px 15px;
   opacity: 0.6;
 }
 @media (max-width: 864px) {
@@ -385,7 +391,7 @@ select, option {
 .adapt-burger__item1, .adapt-burger__item2, .adapt-burger__item3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #fff;
     margin: 6px 0;
     transition: 0.4s;
 }

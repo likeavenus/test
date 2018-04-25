@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  function myFunction(x) {
-    x.classList.toggle("change");
-  }
-  $('.')
-});
+  const toggle = $('.header__list')
+  $('.').click(function(){
+      toggle.toggleClass('header__list--show');
+    });
+  });
