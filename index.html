@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hotels.ru</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -56,6 +57,16 @@
       </ul>
     </nav>
   </header>
+        <!-- adaptive-header -->
+    <div class="adapt-header">
+      <ul class="adapt-header__list">
+        <li class="header__sign-in">
+          <a href="#" class="header__link header__link--sign-in"><i class="icon dude"></i>Sign in</a>
+        </li>
+        <li class="adapt-header__item"></li>
+      </ul>
+    </div>
+      <!-- adaptive-header end -->
 <main class="main">
   <div class="main__container">
     <form action="#" name="tickets" class="form">
@@ -69,7 +80,7 @@
             <span class="form__departure form__departure--dashed">Moscow</span>
           </label>
         </div>
-        <div class="form__box">
+        <div class="form__box form__box--width">
           <button class="form__box-btn"><i class="icon reverse"></i></button>
         </div>
         <div class="form__box">
