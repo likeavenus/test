@@ -247,6 +247,11 @@ input {
   max-width: 410px;
   width: 100%;
 }
+@media (max-width: 400px) {
+  .form__box {
+    width: 80%;
+  }
+}
 .form__box--width {
   width: 35px;
   display: inline-block;
@@ -278,6 +283,11 @@ input {
   display: block;
   text-align: left;
   margin: 10px 10px 10px 0;
+}
+@media (max-width: 992px) {
+  .label-date {
+    text-align: center;
+  }
 }
 .form__input {
   max-width: 397px;
@@ -311,15 +321,20 @@ input {
 }
 .form__input-date {
   padding: 10px;
-  background: url(../img/calendar.png) no-repeat 145px  #fff;
+  background: url(../img/calendar.png) no-repeat 90% 50%  #fff;
   cursor: pointer;
 
 }
 .form__input-date--blue {
   background-color: #1395d3;
   border: 1px solid #0076ad;
-  background-image: url(../img/calendar2.png);
+  background: url(../img/calendar2.png) no-repeat 90% 50%;
   color: #94c4db;
+}
+@media (max-width: 992px) {
+  .form__input-date--blue {
+    margin-left: 30px;
+  }
 }
 
 .form__input-roundtrip:checked ~ .form__box-return {
