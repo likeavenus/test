@@ -377,12 +377,12 @@ select, option {
 .form__box-option:hover {
   background-color: #bfd8eb;
 }
-.container {
+.adapt-burger {
     display: inline-block;
     cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+.adapt-burger__item1, .adapt-burger__item2, .adapt-burger__item3 {
     width: 35px;
     height: 5px;
     background-color: #333;
@@ -390,14 +390,14 @@ select, option {
     transition: 0.4s;
 }
 
-.change .bar1 {
+.change .adapt-burger__item1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .adapt-burger__item2 {opacity: 0;}
 
-.change .bar3 {
+.change .adapt-burger__item3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
