@@ -63,7 +63,13 @@
         <li class="header__sign-in">
           <a href="#" class="header__link header__link--sign-in"><i class="icon dude"></i>Sign in</a>
         </li>
-        <li class="adapt-header__item"></li>
+        <li class="adapt-header__item">
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </li>
       </ul>
     </div>
       <!-- adaptive-header end -->
@@ -126,7 +132,12 @@
 
 </main>
 <footer></footer>
-<script src="js/script.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
+<script>
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+</script>
+<script src="js/script.js"></script>
 </body>
 </html>
