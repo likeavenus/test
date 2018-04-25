@@ -247,6 +247,19 @@ input {
   max-width: 410px;
   width: 100%;
 }
+.form__box2 {
+  width: auto;
+}
+@media (min-width: 992px) {
+.form__box2:first-child {
+  margin-left: 69px;
+  }
+}
+@media (min-width: 992px) {
+.form__box2:last-child {
+  margin-right: 65px;
+  }
+}
 @media (max-width: 400px) {
   .form__box {
     width: 80%;
@@ -416,6 +429,9 @@ input {
   padding: 15px;
   border-radius: 5px;
   margin-top: 25px;
+}
+.form__box--select {
+  width: initial;
 }
 select, option {
   cursor: pointer;
